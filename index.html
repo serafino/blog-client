@@ -9,6 +9,13 @@
   <script src="jspm_packages/system.js"></script>
   <script src="config.js"></script>
   <script>
+    SystemJS.config({
+      meta: {
+        "*.scss": { "loader": "sass" },
+        "*.sass": { "loader": "sass" }
+      }
+    });
+
     System.import("main.js");
   </script>
 </body>
