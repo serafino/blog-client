@@ -1,0 +1,51 @@
+{
+  "name": "blog-client",
+  "version": "0.1.0",
+  "description": "Client-side component of a full-stack JS app",
+  "main": "bundle.js",
+  "scripts": {
+    "pretest": "webpack",
+    "test": "karma start --single-run",
+    "start": "karma start & webpack-dev-server --port 3000 --inline --hot --content-base src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serafino/blog-client.git"
+  },
+  "author": "Abraham Serafino",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/serafino/blog-client/issues"
+  },
+  "homepage": "https://github.com/serafino/blog-client#readme",
+  "devDependencies": {
+    "babel-core": "6.22.1",
+    "babel-loader": "6.2.10",
+    "babel-preset-es2015": "6.22.0",
+    "babel-preset-stage-0": "6.22.0",
+    "chai": "3.5.0",
+    "css-loader": "0.26.1",
+    "eslint": "3.14.0",
+    "eslint-config-standard": "6.2.1",
+    "eslint-loader": "1.6.1",
+    "eslint-plugin-promise": "3.4.0",
+    "eslint-plugin-standard": "2.0.1",
+    "html-loader": "0.4.4",
+    "karma": "1.4.0",
+    "karma-chai": "0.1.0",
+    "karma-mocha": "1.3.0",
+    "karma-mocha-reporter": "2.2.2",
+    "karma-phantomjs-launcher": "1.0.2",
+    "karma-webpack": "2.0.1",
+    "node-sass": "4.3.0",
+    "sass-loader": "4.1.1",
+    "style-loader": "0.13.1",
+    "webpack": "1.14.0",
+    "webpack-dev-server": "1.16.2"
+  },
+  "dependencies": {
+    "lodash": "4.17.4",
+    "moment": "2.17.1",
+    "rivets": "0.9.6"
+  }
+}

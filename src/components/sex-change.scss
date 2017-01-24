@@ -1,0 +1,13 @@
+@import '../main.scss';
+
+.sex-change-widget {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  @include transition(.3s, .3s);
+}
+
+select.sex-change-widget {
+  @extend .sex-change-widget;
+  border-radius: 12rem;
+}
