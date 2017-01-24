@@ -1,7 +1,7 @@
 var path = require('path');
 
 module.exports = {
-    entry: ['webpack/hot/dev-server', './src/main.js'],
+    entry: ['./src/main.js'],
 
     output: {
         path: __dirname + '/public',

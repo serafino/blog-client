@@ -5,7 +5,7 @@
   "main": "bundle.js",
   "scripts": {
     "test": "webpack && karma start --single-run",
-    "start": "karma start & webpack-dev-server --port 3000 --inline --hot --open --no-info --content-base src"
+    "start": "karma start & webpack-dev-server --port 3000 --inline --hot --open --no-info --content-base public"
   },
   "repository": {
     "type": "git",
