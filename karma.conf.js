@@ -18,6 +18,11 @@ module.exports = function(config) {
         reporters: ['mocha'],
         browsers: ['PhantomJS'],
 
+        webpackMiddleware: {
+            noInfo: true,
+            stats: 'errors-only'
+        },
+
         plugins: [
             require("karma-webpack"),
             'karma-chai',

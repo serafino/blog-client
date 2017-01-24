@@ -4,9 +4,8 @@
   "description": "Client-side component of a full-stack JS app",
   "main": "bundle.js",
   "scripts": {
-    "pretest": "webpack",
-    "test": "karma start --single-run",
-    "start": "karma start & webpack-dev-server --port 3000 --inline --hot --open --content-base src"
+    "test": "webpack && karma start --single-run",
+    "start": "karma start & webpack-dev-server --port 3000 --inline --hot --open --no-info --content-base src"
   },
   "repository": {
     "type": "git",
