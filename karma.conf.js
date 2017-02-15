@@ -3,7 +3,7 @@ var webpackConfig = require('./webpack.config');
 module.exports = function(config) {
     config.set({
         basePath: '',
-        frameworks: ['mocha', 'chai'],
+        frameworks: ['jasmine'],
         files: ['test/*-spec.js', 'test/**/*-spec.js'],
 
         preprocessors: {
@@ -25,8 +25,7 @@ module.exports = function(config) {
 
         plugins: [
             require("karma-webpack"),
-            'karma-chai',
-            'karma-mocha',
+            'karma-jasmine',
             'karma-phantomjs-launcher',
             'karma-mocha-reporter'
         ]
